@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Steganography</h2>
+        <p class="subtitle">Hide messages inside meaningful sentences</p>
+
+        <div class="form-group">
+            <label for="secretInput">Secret Message / Encrypted Text:</label>
+            <textarea id="secretInput" placeholder="Type secret message to HIDE, or paste cover text to DECRYPT..."></textarea>
+        </div>
+
+        <div class="button-group">
+            <button id="encryptBtn" class="btn btn-encrypt">Encrypt Text</button>
+            <button id="decryptBtn" class="btn btn-decrypt">Decrypt Text</button>
+        </div>
+
+        <div class="form-group">
+            <label for="outputResult">Result:</label>
+            <textarea id="outputResult" readonly placeholder="Your generated cover text or decrypted message will appear here..."></textarea>
+        </div>
+    </div>
+
+    <script src="stegano.js"></script>
+</body>
+</html>
